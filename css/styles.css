@@ -12,7 +12,6 @@ body {
   font-family: var(--main-family);
   color: var(--secondary-color);
   background-color: #ffffff;
-  margin: 0;
 }
 
 h1,
@@ -35,12 +34,16 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1128px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 1128px;
+  padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid tomato;
 }
 
 .list {
@@ -417,21 +420,19 @@ button {
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
-.list {
-}
 .portfolio-list-item {
   margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
 }
+
 .portfolio-article {
 }
+
 .portfolio-images {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .portfolio-card-descr {
