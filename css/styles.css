@@ -1,0 +1,308 @@
+/* ========== COMPONENTS ========== */
+
+:root {
+  --main-family: "Roboto", sans-serif;
+  --main-color: #2e2f42;
+  --secondary-color: #434455;
+  --main-background-color: #ffffff;
+  --logo-color: #4d5ae5;
+}
+
+body {
+  font-family: var(--main-family);
+  color: var(--secondary-color);
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ========== /COMPONENTS ========== */
+
+/* ========== MAIN PAGE ========== */
+/* ========== HEADER ========== */
+
+.header {
+}
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
+
+.web-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+
+.nav-list {
+}
+.nav-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: #404bbf;
+}
+
+.contact {
+  font-style: normal;
+}
+.contact-list {
+}
+.list {
+}
+.contact-list-item {
+}
+.contact-list-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: #404bbf;
+}
+
+/* ========== /HEADER ========== */
+
+/* ========== HERO SECTION ========== */
+
+.hero-section {
+  background-color: var(--main-color);
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: var(--logo-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* ========== /HERO SECTION ========== */
+
+/* ========== SECTION ABOUT ========== */
+.section-about {
+}
+.about-title {
+}
+.about-list {
+}
+.about-list-item {
+}
+.about-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.about-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ========== /SECTION ABOUT ========== */
+
+/* ========== SECTION GALLERY ========== */
+.gallery-section {
+}
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.gallery-list {
+}
+.gallery-list-item {
+}
+.gallery-picture {
+}
+/* ========== /SECTION GALLERY ========== */
+
+/* ========== SECTION TEAM ========== */
+.team-section {
+  background-color: #f4f4fd;
+}
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.team-list {
+}
+.list {
+}
+.team-list-item {
+  background-color: #ffffff;
+}
+.team-list-img {
+}
+.teammate {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.teammate-position {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* ========== /SECTION TEAM ========== */
+
+/* ========== FOOTER ========== */
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.web-logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+.logo-link-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--logo-color);
+}
+/* ========== /FOOTER ========== */
+/* ========== MAIN PAGE ========== */
+
+/* ========== PORTFOLIO PAGE ========== */
+/* ========== FILTER OF BUTTONS ========== */
+.btn-filter {
+}
+.btn-list {
+}
+.btn-list-item {
+}
+.btn-portfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  cursor: pointer;
+  background-color: #f4f4fd;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+/* ========== FILTER OF BUTTONS ========== */
+
+/* ========== PORTFOLIO ROWS ========== */
+.row-one-section {
+}
+.portfolio-list {
+}
+.list {
+}
+.portfolio-list-item {
+}
+.portfolio-article {
+}
+.portfolio-images {
+}
+.portfolio-cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.portfolio-cards-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+/* ========== /PORTFOLIO ROWS ========== */
+
+/* ========== /PORTFOLIO PAGE ========== */
