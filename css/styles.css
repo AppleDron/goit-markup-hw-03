@@ -12,6 +12,7 @@ body {
   font-family: var(--main-family);
   color: var(--secondary-color);
   background-color: #ffffff;
+  margin: 0;
 }
 
 h1,
