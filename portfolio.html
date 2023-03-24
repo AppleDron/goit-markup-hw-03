@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="portfolio-header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo-link link"
@@ -60,8 +59,8 @@
     <!-- Main content -->
     <main>
       <section class="btn-filter">
-        <h1 hidden>Buttons</h1>
-        <div class="container">
+        <h1 class="visually-hidden">Buttons</h1>
+        <div class="container portfolio-container">
           <ul class="btn-list list">
             <li class="btn-list-item">
               <button class="btn-portfolio" type="button">All</button>
@@ -79,10 +78,8 @@
               <button class="btn-portfolio" type="button">Marketing</button>
             </li>
           </ul>
-        </div>
 
-        <!-- Portfolio row -->
-        <div class="container">
+          <!-- Portfolio row -->
           <ul class="portfolio-list list">
             <li class="portfolio-list-item">
               <a href="" class="link">

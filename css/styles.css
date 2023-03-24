@@ -24,14 +24,22 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 button {
+  display: block;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+address {
+  font-style: normal;
 }
 
 img {
@@ -40,18 +48,27 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1128px;
-  padding: 0 15px;
+  max-width: 1158px;
   margin: 0 auto;
 }
 
-.list {
-  list-style: none;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.link {
-  text-decoration: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ========== /COMPONENTS ========== */
@@ -60,14 +77,16 @@ img {
 /* ========== HEADER ========== */
 
 .header {
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-nav {
@@ -82,6 +101,7 @@ img {
 
 .contact-list {
   display: flex;
+  gap: 40px;
 }
 
 .logo-link {
@@ -109,8 +129,6 @@ img {
   color: #2e2f42;
 }
 
-.nav-list {
-}
 .nav-list-item {
   font-weight: 500;
   font-size: 16px;
@@ -127,11 +145,7 @@ img {
 .contact {
   font-style: normal;
 }
-.contact-list {
-}
-.list {
-  gap: 40px;
-}
+
 .contact-list-item {
 }
 .contact-list-link {
@@ -153,14 +167,8 @@ img {
 
 .hero-section {
   background-color: var(--main-color);
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 188px 0;
+  padding: 168px 0;
+  text-align: center;
 }
 
 .main-title {
@@ -171,6 +179,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
@@ -179,12 +188,12 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: var(--logo-color);
   padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .btn:hover,
@@ -201,11 +210,6 @@ img {
   padding-bottom: 120px;
 }
 
-.about-container {
-}
-
-.about-title {
-}
 .about-list {
   display: flex;
   gap: 24px;
@@ -231,9 +235,6 @@ img {
   padding-bottom: 120px;
 }
 
-.gallery-container {
-}
-
 .second-title {
   font-weight: 700;
   font-size: 36px;
@@ -248,8 +249,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.gallery-list-item {
-}
+
 .gallery-picture {
   display: block;
   max-width: 100%;
@@ -262,9 +262,6 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f4f4fd;
-}
-
-.teeam-container {
 }
 
 .team-list {
@@ -284,24 +281,19 @@ img {
 }
 .team-list {
 }
-.list {
-}
+
 .team-list-item {
   background-color: #ffffff;
-}
-
-.team-card-container {
-  padding: 0 16px 32px;
-  background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card-container {
+  padding: 32px 0;
+}
+
 .team-list-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
   margin-bottom: 32px;
 }
 .teammate {
@@ -325,9 +317,6 @@ img {
 
 .footer {
   background-color: #2e2f42;
-}
-
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -371,27 +360,17 @@ img {
 /* ========== /MAIN PAGE ========== */
 
 /* ========== PORTFOLIO PAGE ========== */
-
-/* ========== PORTFOLIO HEADER PAGE ========== */
-
-.portfolio-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
-}
-
-/* ========== /PORTFOLIO HEADER PAGE ========== */
-
 /* ========== PORTFOLIO FILTER OF BUTTONS ========== */
-.btn-filter {
-}
+
 .btn-list {
   display: flex;
-  padding-top: 96px;
-  padding-bottom: 72px;
   justify-content: center;
 }
 .btn-list-item {
+  padding-top: 96px;
+  margin-bottom: 72px;
 }
+
 .btn-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -416,31 +395,28 @@ img {
 /* ========== FILTER OF BUTTONS ========== */
 
 /* ========== PORTFOLIO ROWS ========== */
-.row-one-section {
+
+.portfolio-container {
+  margin-bottom: 120px;
 }
+
 .portfolio-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 120px;
+  gap: 48px 24px;
 }
 
 .portfolio-list-item {
   margin-bottom: 48px;
-  width: calc((100% - 48px) / 3);
-}
-
-.portfolio-article {
-}
-
-.portfolio-images {
 }
 
 .portfolio-card-descr {
   background: #ffffff;
   border: 1px solid #e7e9fc;
+  border-top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .portfolio-cards-title {
@@ -449,7 +425,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 .portfolio-cards-subtitle {
@@ -457,6 +432,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  padding-left: 16px;
 }
 /* ========== /PORTFOLIO ROWS ========== */
