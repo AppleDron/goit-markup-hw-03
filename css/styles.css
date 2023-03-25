@@ -55,6 +55,7 @@ a {
 .container {
   max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -85,7 +86,6 @@ a {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -144,6 +144,7 @@ a {
 
 .contact {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-list-item {
@@ -215,6 +216,7 @@ a {
   gap: 24px;
 }
 .about-list-item {
+  width: 264px;
 }
 .about-list-title {
   font-weight: 500;
@@ -222,6 +224,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  margin-bottom: 8px;
 }
 .about-list-text {
   font-size: 16px;
@@ -294,7 +297,6 @@ a {
 }
 
 .team-list-img {
-  margin-bottom: 32px;
 }
 .teammate {
   font-weight: 500;
@@ -366,10 +368,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 .btn-list-item {
-  padding-top: 96px;
-  margin-bottom: 72px;
 }
 
 .btn-portfolio {
@@ -398,7 +399,8 @@ a {
 /* ========== PORTFOLIO ROWS ========== */
 
 .portfolio-container {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  padding-top: 96px;
 }
 
 .portfolio-list {
@@ -408,7 +410,6 @@ a {
 }
 
 .portfolio-list-item {
-  margin-bottom: 48px;
 }
 
 .portfolio-card-descr {
